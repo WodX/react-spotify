@@ -1,3 +1,13 @@
+
+# How to run it
+
+- Create a new app on: https://developer.spotify.com/dashboard/applications
+- On your app add this url `http://localhost:3000/redirect` on `Redirect URIs` options
+- Clone this project
+- Copy the `.env.example` file and rename it to `.env`
+- Update the content with the right information from your spotify app created on the first step
+- Run `yarn && yarn start`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,13 +78,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-
-# How to run it
-
-- Create a new app on: https://developer.spotify.com/dashboard/applications
-- On your app add this url `http://localhost:3000/redirect` on `Redirect URIs` options
-- Clone this project
-- Copy the `.env.example` file and rename it to `.env`
-- Update the content with the right information from your spotify app created on the first step
-- Run `yarn && yarn start`
