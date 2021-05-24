@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const List = ({data = [], title}) => {
+const List = ({data = [], title, route="album"}) => {
 
     if(data.length === 0){
         return null;
@@ -8,13 +8,12 @@ const List = ({data = [], title}) => {
     return(
         <>
             <p>{title}</p>
-            <div className="user-albums">
+            <div className="list">
                 {data.map((object) => {
                     let item = "album" in object ? object.album : object;
                     return (
-                        <Link to={{pathname: "/album", state:item}} id={item.id} key={item.id} >
-                            <img width="300" src={item.images[0].url} alt={`${item.id}_image`} />
-                            <div>{item.label}</div>
+                        <Link to={{pathname: `/${route}`, state:item}} id={item.id} key={item.id} >
+                            <img width="300" height="300" src={item.images[0] ? item.images[0].url: "https://emtechmena.com/wp-content/uploads/2018/07/default-avatar.png"} alt={`${item.id}_image`} />
                         </Link>
                         )
                 })}
