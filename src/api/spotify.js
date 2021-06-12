@@ -11,7 +11,8 @@ const scopes = [
   "user-follow-read",
   "user-follow-modify",
   "playlist-modify-public",
-  "playlist-modify-private"
+  "playlist-modify-private",
+  "playlist-read-private"
 ];
 
 export const loginUrl = `${endpoint}?client_id=${clientId}&response_type=code&redirect_uri=${redirectUri}&scope=${scopes.join(
