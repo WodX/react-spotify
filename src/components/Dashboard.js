@@ -46,7 +46,7 @@ const Dashboard = () => {
 			<hr/>
 			{Object.keys(user).length > 0 && (
 				<div className="user-info">
-					<img src={user.images[0].url} alt="profile_image" width={200} />
+					<img src={user.images[0]?.url} alt="profile_image" width={200} />
 					<div>
 						<p><b>Name:</b> {user.display_name}</p>
 						<p><b>Email:</b> {user.email}</p>
